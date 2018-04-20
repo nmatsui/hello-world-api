@@ -1,6 +1,5 @@
 # hello-world-api
-
-This Dockerfile create a [Docker](http://docker.com) image to start a simple REST API server.
+Simple REST API Server which always respond 200 OK.
 
 ## Description
 
