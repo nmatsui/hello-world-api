@@ -4,9 +4,9 @@
   "description": "Simple REST API Server which always respond 200 OK",
   "main": "server.js",
   "scripts": {
-    "lint": "eslint *.js test/*.js",
+    "lint": "eslint src/*.js test/*.js",
     "test": "NODE_PATH=. mocha --exit",
-    "start": "node server.js"
+    "start": "NODE_PATH=. node src/server.js"
   },
   "repository": {
     "type": "git",
