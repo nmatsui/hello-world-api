@@ -31,30 +31,30 @@ $ docker build -t nmatsui/hello-world-api .
 1. call REST API
 
     ```bash
-    $ curl http://localhost:3000/
+    $ curl -i http://localhost:3000/
     HTTP/1.1 200 OK
     Content-Type: application/json
-    Date: Wed, 11 Apr 2018 01:06:52 GMT
+    Date: Sat, 21 Apr 2018 00:56:01 GMT
     Connection: keep-alive
     Transfer-Encoding: chunked
 
     {"message":"hello world!"}
     ```
-1. If you want to change message, give the 'MESSAGE' environment variable
+1. If you want to change message or listening port, give the 'MESSAGE' or 'PORT' environment variable
 
     ```bash
-    $ docker run -d --rm -p 3000:3000 nmatsui/hello-world-api
+    $ docker run -d --rm -p 8888:8888 -e MESSAGE="FOO BAR" -e PORT="8888" nmatsui/hello-world-api
     ```
 
     ```bash
-    $ curl http://localhost:3000/
+    $ curl -i http://localhost:8888/any/path
     HTTP/1.1 200 OK
     Content-Type: application/json
-    Date: Wed, 11 Apr 2018 01:09:45 GMT
+    Date: Sat, 21 Apr 2018 00:57:25 GMT
     Connection: keep-alive
     Transfer-Encoding: chunked
 
-    {"message":"foobar"}
+    {"message":"FOO BAR"}
     ```
 
 ## License
