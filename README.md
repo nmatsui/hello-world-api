@@ -1,6 +1,9 @@
 # hello-world-api
 Simple REST API Server which always respond 200 OK.
 
+[![TravisCI Status](https://travis-ci.org/nmatsui/hello-world-api.svg?branch=master)](https://travis-ci.org/nmatsui/hello-world-api)
+[![DockerHub Status](https://dockerbuildbadges.quelltext.eu/status.svg?organization=nmatsui&repository=hello-world-api)](https://hub.docker.com/r/nmatsui/hello-world-api/builds/)
+
 ## Description
 
 The docker container which is run from this image start nodejs http server and respond 'application/json' payload.
